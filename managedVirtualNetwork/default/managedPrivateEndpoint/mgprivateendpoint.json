@@ -1,0 +1,7 @@
+{
+	"name": "mgprivateendpoint",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/f2b75c05-3ec5-46f7-a3f8-719f047d2c8c/resourceGroups/covid-reporting-rg/providers/Microsoft.Sql/servers/ittechbroserver",
+		"groupId": "sqlServer"
+	}
+}
