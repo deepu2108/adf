@@ -15,6 +15,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
 		},
+		"azprivateendpoint_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'azprivateendpoint'"
+		},
+		"mgprivateendpoint_properties_privateLinkResourceId": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f2b75c05-3ec5-46f7-a3f8-719f047d2c8c/resourceGroups/covid-reporting-rg/providers/Microsoft.Sql/servers/ittechbroserver"
+		},
+		"mgprivateendpoint_properties_groupId": {
+			"type": "string",
+			"defaultValue": "sqlServer"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -47,6 +59,15 @@
 					},
 					"AzureSqlDatabase1_connectionString": {
 						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
+					"azprivateendpoint_connectionString": {
+						"value": "[parameters('azprivateendpoint_connectionString')]"
+					},
+					"mgprivateendpoint_properties_privateLinkResourceId": {
+						"value": "[parameters('mgprivateendpoint_properties_privateLinkResourceId')]"
+					},
+					"mgprivateendpoint_properties_groupId": {
+						"value": "[parameters('mgprivateendpoint_properties_groupId')]"
 					}
 				}
 			},
