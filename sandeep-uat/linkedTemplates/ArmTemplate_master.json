@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "sandeep-uat"
 		},
+		"blb_tbsource_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'blb_tbsource'"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +41,12 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"blb_tbsource_connectionString": {
+						"value": "[parameters('blb_tbsource_connectionString')]"
+					},
+					"AzureSqlDatabase1_connectionString": {
+						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
 					}
 				}
 			},

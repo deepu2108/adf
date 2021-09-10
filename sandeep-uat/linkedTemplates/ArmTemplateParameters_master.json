@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "sandeep-uat"
 		},
+		"blb_tbsource_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},
